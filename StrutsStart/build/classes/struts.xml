@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE struts PUBLIC
-	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
-	"http://struts.apache.org/dtds/struts-2.3.dtd">
-
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD  
+ Struts Configuration 2.1//EN"   
+"http://struts.apache.org/dtds/struts-2.1.dtd"> 
 <struts>
-	
- <package name="default" extends="struts-default">
-
-	<action name="welcome" class="WelcomeAction" method="sayWelcome">
-
-	<result name="success">/output.jsp</result>
-	
-    </action>
-
- </package>
-
+	<package name="default" extends="struts-default">
+		<action name="welcomeac" class="com.strutstart.pojo.WelcomeAction" method="saywelcome">
+			<result name="sucess">/welcome.jsp</result>
+		</action>
+		<action name="login" class="com.strutstart.pojo.WelcomeAction" method="login">
+			<result name="sucess">/welcome.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
 </struts>
